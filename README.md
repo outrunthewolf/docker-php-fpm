@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/zot24/php-fpm:latest.svg)](https://imagelayers.io/?images=zot24/php-fpm:latest 'Get your own badge on imagelayers.io')
+
 # PHP-FPM Docker image
 
 This is an PHP-FPM docker base image using [Alpine](http://alpinelinux.org/) Linux and based on the [docker-library/php](https://github.com/docker-library/php) docker image with just few modifications to make smaller and to have `pgsql` support out-of-the-box.
