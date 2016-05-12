@@ -39,7 +39,6 @@ RUN set -x \
     libxml2-dev \
     openssl-dev \
     sqlite-dev \
-    postgresql-dev \
   && curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o "$PHP_FILENAME" \
   && echo "$PHP_SHA256 *$PHP_FILENAME" | sha256sum -c - \
   && curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o "$PHP_FILENAME.asc" \
@@ -60,7 +59,6 @@ RUN set -x \
     --enable-fpm \
     --with-fpm-user=www-data \
     --with-fpm-group=www-data \
-    --with-pdo-pgsql \
     --disable-cgi \
     # --enable-mysqlnd is included here because it's harder to compile after the fact than extensions are (since it's a plugin for several extensions, not an extension in itself)
 		--enable-mysqlnd \
